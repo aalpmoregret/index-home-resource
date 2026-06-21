@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>咪咕体育 – 产品说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background-color: #f7f8fa;
+      color: #1e2a3a;
+      line-height: 1.7;
+    }
+
+    /* 深色头图 */
+    .hero {
+      background: linear-gradient(145deg, #0b1a2e 0%, #152b41 100%);
+      padding: 4rem 2rem 3.5rem;
+      text-align: center;
+      color: #eef3f7;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: linear-gradient(to bottom, transparent, #f7f8fa);
+      pointer-events: none;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 0.8rem;
+    }
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      opacity: 0.85;
+      font-weight: 350;
+    }
+
+    /* 浅色正文区 */
+    .container {
+      max-width: 1000px;
+      margin: -30px auto 0;
+      padding: 0 1.8rem 3rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.02);
+      padding: 2.2rem 2.5rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      border-left: 5px solid #3677b5;
+      padding-left: 1rem;
+      margin-bottom: 1.2rem;
+      color: #1f2c3d;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 1.4rem 0 0.6rem;
+      color: #2c4056;
+    }
+
+    .card p, .card li {
+      color: #2e3b4b;
+      margin-bottom: 0.7rem;
+    }
+
+    .card ul {
+      padding-left: 1.5rem;
+      list-style: disc;
+    }
+
+    .highlight-badge {
+      display: inline-block;
+      background: #e7f0fa;
+      color: #235b8c;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.2rem 0.9rem;
+      border-radius: 40px;
+      margin-right: 0.5rem;
+    }
+
+    /* 强调色链接 */
+    a {
+      color: #2b6a9e;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1.5px;
+      text-decoration-color: rgba(43, 106, 158, 0.25);
+      transition: color 0.15s, text-decoration-color 0.15s;
+    }
+    a:hover {
+      color: #154775;
+      text-decoration-color: #154775;
+    }
+
+    .inline-link {
+      background: #f2f6fc;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-weight: 450;
+    }
+
+    .scene-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 0.8rem 0;
+    }
+    .scene-item {
+      background: #f4f7fc;
+      border-radius: 16px;
+      padding: 1rem 1.2rem;
+      border-left: 3px solid #3677b5;
+    }
+    .scene-item strong {
+      color: #1f3b57;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 1rem 0;
+    }
+    .faq-item:last-child {
+      border-bottom: 0;
+    }
+    .faq-q {
+      font-weight: 500;
+      color: #1e2f42;
+      margin-bottom: 0.3rem;
+    }
+    .faq-a {
+      color: #3f5066;
+      font-size: 0.95rem;
+    }
+
+    .footer-note {
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+      color: #6a7b8f;
+      text-align: center;
+      border-top: 1px solid #dce2ec;
+      padding-top: 1.8rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 640px) {
+      .hero { padding: 3rem 1.2rem 2.5rem; }
+      .hero h1 { font-size: 2rem; }
+      .card { padding: 1.6rem 1.2rem; }
+      .card h2 { font-size: 1.3rem; }
+      .scene-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 深色头图 -->
+<section class="hero">
+  <h1>咪咕体育 · 产品说明</h1>
+  <p>一个围绕体育赛事、内容聚合与观赛服务的数字化平台，从赛事直播到社区讨论，提供持续更新的体育信息体验。</p>
+</section>
+
+<!-- 浅色正文区 -->
+<main class="container">
+
+  <!-- 摘要卡片 -->
+  <div class="card">
+    <h2>站点介绍</h2>
+    <p>
+      <a href="https://index-home-migu.com" class="inline-link">咪咕体育</a> 是服务于体育爱好者的综合信息与赛事服务平台。它聚合了国内外多项热门赛事、原创节目、数据资讯及互动功能，用户可以在一个界面中获得从赛程预告到赛后分析的连贯内容。平台覆盖的项目包括足球、篮球、网球、电竞等，同时也在持续拓展新兴运动品类。整体界面以信息流与直播模块为核心，强调实时性与多视角体验。
+    </p>
+    <p style="margin-top: 0.4rem;">
+      与许多垂直体育平台不同，<a href="https://index-home-migu.com">咪咕体育</a> 在内容整合上更注重版权合作与自制节目的平衡，既有官方转播资源，也提供解说、集锦、数据可视化等辅助内容。无论你是重度赛事观众还是偶尔关注体育资讯的用户，都可以在这里找到适合自己的信息密度。
+    </p>
+  </div>
+
+  <!-- 亮点卡片 -->
+  <div class="card">
+    <h2>主要特点</h2>
+    <ul>
+      <li><strong>多赛事覆盖</strong> – 涵盖主流联赛与国际赛事，包括中超、CBA、五大联赛、欧冠、NBA、网球大满贯及部分电竞赛事。</li>
+      <li><strong>直播与回放整合</strong> – 提供实时直播信号，同时保留赛后回放、集锦与精彩片段，方便错时观看。</li>
+      <li><strong>数据与资讯伴随</strong> – 每场比赛配有实时数据面板、球员统计、积分榜更新，并独立运营新闻与专栏内容。</li>
+      <li><strong>社区互动氛围</strong> – 用户可在赛事直播间、讨论区及话题页参与交流，形成围绕比赛的即时讨论场。</li>
+    </ul>
+    <p style="margin-top: 0.8rem; font-size: 0.95rem;">
+      其中，直播画质与多视角切换是不少用户持续选择 <a href="https://index-home-migu.com">咪咕体育</a> 的原因之一。平台也在逐步优化低延迟传输与移动端适配，让观赛体验更连贯。
+    </p>
+  </div>
+
+  <!-- 使用建议卡片 -->
+  <div class="card">
+    <h2>使用建议</h2>
+    <p>根据不同的使用场景与习惯，可以尝试以下方式来提升体验：</p>
+    <div class="scene-grid">
+      <div class="scene-item">
+        <strong>🏀 日常观赛</strong>
+        关注你支持的球队或联赛，在“我的关注”功能中订阅赛程，平台会在赛前推送提醒。
+      </div>
+      <div class="scene-item">
+        <strong>⚽ 赛后分析</strong>
+        比赛结束后浏览数据面板与专家复盘，或查看用户制作的精彩剪辑，加深对战术与球员表现的理解。
+      </div>
+      <div class="scene-item">
+        <strong>📱 碎片时间</strong>
+        在移动端使用“快讯”或“短视频”模块，快速获取当日重要比分、转会新闻或趣味花絮。
+      </div>
+      <div class="scene-item">
+        <strong>💬 社区参与</strong>
+        加入热门话题讨论，或参与平台发起的竞猜、投票等轻互动，增加观赛的社交趣味。
+      </div>
+    </div>
+    <p style="margin-top: 1rem;">
+      如果你是第一次接触 <a href="https://index-home-migu.com">咪咕体育</a>，建议先浏览首页的赛事导航栏，大致了解当前正在直播和即将开始的场次，再逐步探索其他版块。平台在重大赛事期间通常会推出专题页面，集中展示赛程、前瞻与相关活动。
+    </p>
+  </div>
+
+  <!-- 可信说明 + FAQ 摘要卡片 -->
+  <div class="card">
+    <h2>关于可信度与常见疑问</h2>
+    <p>
+      <a href="https://index-home-migu.com">咪咕体育</a> 由咪咕文化科技有限公司运营，拥有多项体育赛事媒体版权，并与多家体育组织、俱乐部及媒体机构保持合作关系。平台在赛事转播、内容审核与用户数据保护方面遵循相关法规与行业标准。作为信息聚合与直播服务出口，其本质是为用户提供体育内容消费的渠道，不承诺赛果、不进行违规博彩引导。
+    </p>
+
+    <div class="faq-item">
+      <div class="faq-q">问：平台上的赛事版权覆盖哪些区域？</div>
+      <div class="faq-a">答：咪咕体育的版权范围主要面向中国大陆地区。部分国际赛事可能因地域限制而无法在境外观看，具体以平台内版权标注为准。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：是否需要注册才能使用全部功能？</div>
+      <div class="faq-a">答：浏览资讯、查看赛事数据等基础功能无需登录。但观看直播、参与社区互动、订阅赛事提醒等则需要注册账号。注册过程提供手机号或第三方账户绑定方式。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：平台是否有付费内容？</div>
+      <div class="faq-a">答：部分热门赛事或高清直播可能属于付费会员权益。平台会明确标示付费标识与会员价格，用户可根据需要选择是否购买。免费内容也覆盖了大量场次与短视频资源。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：移动端和小程序体验如何？</div>
+      <div class="faq-a">答：咪咕体育提供独立 App（iOS/Android）以及微信小程序。移动端针对小屏幕优化了直播控制栏与推送功能，整体流畅度与桌面端接近。建议在网络稳定的环境下使用直播功能。</div>
+    </div>
+  </div>
+
+  <!-- 结尾提示 -->
+  <div class="footer-note">
+    <p>本页面为产品说明页，内容基于公开信息整理。具体服务以 <a href="https://index-home-migu.com">咪咕体育</a> 平台实际提供为准。</p>
+  </div>
+
+</main>
+
+</body>
+</html>
